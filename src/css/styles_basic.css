@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
-@font-face {
-  font-family: 'SpaceX';
-  src: URL("../fonts/spacex/SpaceX.ttf") format('truetype');
-  
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
 /*
  * 1.Posicionamiento: position, top, left, z-index
  * 2.Caja (Box Model): display, width, height, margin, padding, border
@@ -24,16 +20,16 @@ body{
   margin:0;
   min-height: 100vh;
 
-  font-family: 'SpaceX', sans-serif;
+  font-family: "Orbitron", sans-serif;
 
-  background:  radial-gradient(circle at 50% 50%, #ff0000 0%, #000000 100%);
+  background:  radial-gradient(circle at 50% 50%, #cef0f06c 0%, #000000 100%);
   background: cover;
 }
 
 body h1{
   margin-top: 50px;
 
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 h1{
   color: white;
@@ -52,13 +48,13 @@ section{
   display: flex;
   justify-content: flex-start;  
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   border-radius: 10px 0;
   padding: 10px;
-  margin: 20px;
-  width: 300px;
-  height: 400px;
+  margin: 10px;
+  width: 500px;
+  height: 200px;
 
   border:solid 2px #000000;
   background-color: white;
