@@ -1,5 +1,5 @@
 import {CardEntity} from './models/entities/cardEntity.js';
-import {renderCard} from './services/renderTarjeta.js';
+import {renderCard} from './components/Tarjeta.js';
 import { getCards, getCard } from './models/cardModel.js';
 
 
@@ -56,6 +56,16 @@ cerrar.addEventListener('click', () => {
     cerrarModal();
 });
 
+const lightMode = document.getElementById('lightmode');
+lightMode.addEventListener('click', () => {
+    const link = document.getElementById('estilos');
+    if(lightMode.checked) {
+        link.setAttribute("href", "./src/css/styles_dark.css");
+    }else{
+        link.setAttribute("href", "./src/css/styles.css");
+    }
+    
+});
 
 renderTarjetas().then(() => {
     console.log('Tarjetas renderizadas');
