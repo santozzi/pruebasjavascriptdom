@@ -75,7 +75,7 @@ section{
 
 /*INICIO TARJETAS*/
 .tarjeta{
-
+  
   display: flex;
   justify-content: flex-start;  
   align-items: center;
@@ -86,7 +86,7 @@ section{
   margin: 20px;
   width: 300px;
   height: 400px;
-
+ 
   border:solid 2px #000000;
   background-color: white;
   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.8));

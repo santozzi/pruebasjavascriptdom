@@ -32,24 +32,14 @@ async function modal(id) {
             const modal = document.getElementById('modal');
             modal.style.display = 'flex';
             modal.innerHTML = renderCard(  new CardEntity(tarjeta.id, tarjeta.titulo, tarjeta.imagen, tarjeta.detalle));
-     
-
-    console.log("tarjeta",tarjeta);
-   
-    
-    
-    
-        
-    
+           
+    console.log("tarjeta",tarjeta);    
 }
+
 function cerrarModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
 }
-
-
-
-
 
 const cerrar = document.getElementById('modal');
 cerrar.addEventListener('click', () => {
@@ -57,8 +47,10 @@ cerrar.addEventListener('click', () => {
 });
 
 const lightMode = document.getElementById('lightmode');
+
 lightMode.addEventListener('click', () => {
     const link = document.getElementById('estilos');
+
     if(lightMode.checked) {
         link.setAttribute("href", "./src/css/styles_dark.css");
     }else{
